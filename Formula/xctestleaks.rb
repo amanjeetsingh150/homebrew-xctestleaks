@@ -18,6 +18,6 @@ class Xctestleaks < Formula
   end
 
   test do
-    assert_match "xctestleaks 0.1.0", shell_output("#{bin}/xctestleaks --version")
+    assert_match "xctestleaks 0.1.1", shell_output("#{bin}/xctestleaks --version")
   end
 end
