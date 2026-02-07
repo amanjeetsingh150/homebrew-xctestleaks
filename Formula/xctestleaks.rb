@@ -1,8 +1,8 @@
 class Xctestleaks < Formula
   desc "Memory leak detection tool for iOS XCTest"
   homepage "https://github.com/amanjeetsingh150/XCTestLeaks"
-  url "https://github.com/amanjeetsingh150/XCTestLeaks/releases/download/v0.1.3/xctestleaks.tar"
-  sha256 "206a100d41060a98e98d4a5383baedac32e39237ccf74f9d9b5ca461d4d4eae4"
+  url "https://github.com/amanjeetsingh150/XCTestLeaks/releases/download/v0.1.4/xctestleaks.tar"
+  sha256 "6686ccec1507d8af498f08b07b71864a0b1ca4affb1e700718f59081bb14f4b9"
   license "Apache-2.0"
 
   depends_on "openjdk"
@@ -18,6 +18,6 @@ class Xctestleaks < Formula
   end
 
   test do
-    assert_match "xctestleaks 0.1.3", shell_output("#{bin}/xctestleaks --version")
+    assert_match "xctestleaks 0.1.4", shell_output("#{bin}/xctestleaks --version")
   end
 end
